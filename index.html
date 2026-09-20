@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Tips BD</title>
+
+    <title>Computer Tips BD - Computer, Windows & Technology Tips</title>
 
     <style>
         * {
@@ -16,103 +17,211 @@
             font-family: Arial, sans-serif;
             background: #f4f7fb;
             color: #222;
+            line-height: 1.6;
         }
 
         header {
-            background: #111827;
+            background: #123c69;
             color: white;
-            padding: 25px 8%;
+            padding: 20px;
         }
 
-        header h1 {
-            font-size: 30px;
+        .header-content {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        header p {
-            margin-top: 8px;
-            color: #cbd5e1;
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-size: 14px;
+            opacity: 0.9;
         }
 
         nav {
-            background: #1f2937;
-            padding: 14px 8%;
+            background: #0d2f52;
+            padding: 12px;
+        }
+
+        nav ul {
+            max-width: 1100px;
+            margin: auto;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin-right: 25px;
-            font-size: 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: #1e5d91;
         }
 
         .hero {
-            padding: 60px 8%;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 50px 25px;
             background: white;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
-        .hero h2 {
+        .hero h1 {
             font-size: 38px;
-            margin-bottom: 15px;
+            color: #123c69;
+            margin-bottom: 12px;
         }
 
         .hero p {
-            font-size: 18px;
             color: #555;
-            max-width: 650px;
-            line-height: 1.6;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            max-width: 600px;
+            margin: 20px auto 0;
+            display: flex;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 6px 0 0 6px;
+            font-size: 15px;
+        }
+
+        .search-box button {
+            padding: 13px 20px;
+            border: none;
+            background: #123c69;
+            color: white;
+            border-radius: 0 6px 6px 0;
+            cursor: pointer;
         }
 
         .container {
-            width: 84%;
-            margin: 40px auto;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
         }
 
-        .container h2 {
-            margin-bottom: 25px;
+        .section-title {
+            text-align: center;
+            color: #123c69;
+            margin-bottom: 20px;
+            font-size: 28px;
         }
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
         .card {
             background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 25px 18px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
         }
 
         .card h3 {
-            margin-bottom: 10px;
+            color: #123c69;
+            margin-bottom: 8px;
         }
 
         .card p {
             color: #666;
-            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .latest {
+            margin-top: 45px;
+        }
+
+        .article {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .article h3 {
+            color: #123c69;
+            margin-bottom: 5px;
+        }
+
+        .article p {
+            color: #666;
+            font-size: 14px;
         }
 
         footer {
-            margin-top: 60px;
-            background: #111827;
+            margin-top: 50px;
+            background: #123c69;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 25px 15px;
         }
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 25px;
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .hero h2 {
+            .hero h1 {
                 font-size: 30px;
             }
+        }
 
-            nav a {
-                margin-right: 10px;
-                font-size: 13px;
+        @media (max-width: 500px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .header-content {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .search-box {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .search-box input,
+            .search-box button {
+                border-radius: 6px;
             }
         }
     </style>
@@ -121,57 +230,105 @@
 <body>
 
     <header>
-        <h1>Computer Tips BD</h1>
-        <p>Easy Computer, Windows & Technology Tips</p>
+        <div class="header-content">
+            <div>
+                <div class="logo">💻 Computer Tips BD</div>
+                <div class="tagline">Easy Computer, Windows & Technology Tips</div>
+            </div>
+        </div>
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Computer Tips</a>
-        <a href="#">Windows</a>
-        <a href="#">Internet</a>
-        <a href="#">Software</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Computer Tips</a></li>
+            <li><a href="#">Windows</a></li>
+            <li><a href="#">Internet</a></li>
+            <li><a href="#">Software</a></li>
+        </ul>
     </nav>
 
     <section class="hero">
-        <h2>Learn Computer Easily</h2>
+        <h1>Learn Computer Easily</h1>
+
         <p>
-            Welcome to Computer Tips BD. Here you can learn
-            useful computer tips, Windows tricks, internet guides
-            and software tutorials in an easy way.
+            Simple computer tips, Windows tricks, internet guides
+            and useful software tutorials.
         </p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search computer tips...">
+            <button>Search</button>
+        </div>
     </section>
 
-    <section class="container">
-        <h2>Popular Topics</h2>
+    <div class="container">
+
+        <h2 class="section-title">Popular Topics</h2>
 
         <div class="cards">
 
             <div class="card">
-                <h3>💻 Computer Tips</h3>
-                <p>Learn useful computer tips and tricks for everyday work.</p>
+                <div class="icon">💻</div>
+                <h3>Computer Tips</h3>
+                <p>Learn useful computer tips and tricks easily.</p>
             </div>
 
             <div class="card">
-                <h3>🪟 Windows Tips</h3>
-                <p>Useful Windows settings, shortcuts and troubleshooting guides.</p>
+                <div class="icon">🪟</div>
+                <h3>Windows Tips</h3>
+                <p>Discover helpful Windows settings and solutions.</p>
             </div>
 
             <div class="card">
-                <h3>🌐 Internet Tips</h3>
-                <p>Learn about browsers, internet safety and useful online tools.</p>
+                <div class="icon">🌐</div>
+                <h3>Internet Tips</h3>
+                <p>Learn useful internet tips and online solutions.</p>
             </div>
 
             <div class="card">
-                <h3>🔧 Software Guides</h3>
-                <p>Simple tutorials for installing and using useful software.</p>
+                <div class="icon">⚙️</div>
+                <h3>Software Guides</h3>
+                <p>Simple guides for useful computer software.</p>
             </div>
 
         </div>
-    </section>
+
+        <div class="latest">
+
+            <h2 class="section-title">Latest Computer Tips</h2>
+
+            <div class="article">
+                <h3>How to Make Your Computer Faster</h3>
+                <p>
+                    Learn some simple ways to improve your computer's
+                    performance and speed.
+                </p>
+            </div>
+
+            <div class="article">
+                <h3>Useful Windows Keyboard Shortcuts</h3>
+                <p>
+                    Discover keyboard shortcuts that can make your
+                    daily computer work faster.
+                </p>
+            </div>
+
+            <div class="article">
+                <h3>How to Keep Your Computer Safe</h3>
+                <p>
+                    Learn basic tips for keeping your computer and
+                    important files protected.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
 
     <footer>
         <p>© 2026 Computer Tips BD. All Rights Reserved.</p>
+        <p>Computer Tips • Windows • Internet • Software</p>
     </footer>
 
 </body>
