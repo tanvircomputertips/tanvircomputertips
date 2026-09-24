@@ -164,12 +164,22 @@
         }
 
         .section-title {
-            text-align: center;
-            color: #123c69;
-            margin-bottom: 20px;
-            font-size: 28px;
-        }
-
+    text-align: center;
+    color: #123c69;
+    margin-bottom: 28px;
+    font-size: 30px;
+    font-weight: 800;
+    position: relative;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #1e5d91;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
         .cards {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
