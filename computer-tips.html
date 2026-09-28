@@ -85,14 +85,20 @@ nav a:hover {
     font-weight: 800;
 }
 
-        .tip {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.07);
-        }
+       .tip {
+    background: white;
+    padding: 28px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+    border-left: 4px solid #1e5d91;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.tip:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+}
         .tip h2 {
             color: #123c69;
             margin-bottom: 10px;
