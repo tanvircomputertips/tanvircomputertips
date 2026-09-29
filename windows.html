@@ -160,16 +160,23 @@ ul {
 }
 
 /* Home button */
-.home-button {
+ .home-button {
     display: inline-block;
-    background: #123c69;
+    background: linear-gradient(135deg, #123c69, #1e5d91);
     color: white;
     text-decoration: none;
-    padding: 11px 20px;
+    padding: 12px 22px;
     border-radius: 8px;
     margin-top: 12px;
     font-weight: 600;
+    box-shadow: 0 4px 10px rgba(18,60,105,0.20);
     transition: all 0.3s ease;
+}
+
+.home-button:hover {
+    background: linear-gradient(135deg, #1e5d91, #2877b5);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(18,60,105,0.25);
 }
 
 .home-button:hover {
