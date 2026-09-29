@@ -5,46 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows Tips - Computer Tips BD</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #222;
-            line-height: 1.7;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+    color: #222;
+    line-height: 1.7;
+}
 
-       header {
-    background: linear-gradient(135deg, #123c69, #1e5d91);
+/* Header */
+header {
+    background: linear-gradient(135deg, #123c69, #2877b5);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 55px 20px;
     border-bottom: 4px solid #0d2f52;
 }
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 8px;
-        }
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 
-      nav {
+header p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
     background: #0d2f52;
     text-align: center;
     padding: 14px 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
-        nav a {
+
+nav a {
     color: white;
     text-decoration: none;
-    margin: 0 4px;
+    margin: 3px;
     padding: 9px 16px;
     border-radius: 20px;
     font-size: 14px;
@@ -58,34 +65,40 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-        .container {
-    max-width: 1100px;
-    margin: 35px auto;
+/* Main container */
+.container {
+    max-width: 1050px;
+    margin: 45px auto;
     padding: 0 20px;
 }
-        .intro,
+
+/* Cards */
+.intro,
 .tip {
     background: white;
-    padding: 28px;
-    margin-bottom: 20px;
-    border-radius: 14px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
-    border-left: 4px solid #1e5d91;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #1e5d91;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .intro:hover,
 .tip:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
-         h2 {
+
+/* Headings */
+h2 {
     color: #123c69;
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     font-weight: 700;
-    position: relative;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5edf5;
 }
 
 h2::after {
@@ -94,58 +107,37 @@ h2::after {
     width: 55px;
     height: 3px;
     background: #1e5d91;
-    margin-top: 8px;
+    margin-top: 9px;
     border-radius: 5px;
 }
-        h3 {
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
 
-        ul {
-            padding-left: 25px;
-        }
+h3 {
+    color: #1e5d91;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
 
-        .home-button {
-            display: inline-block;
-            background: #123c69;
-            color: white;
-            text-decoration: none;
-            padding: 10px 18px;
-            border-radius: 6px;
-            margin-top: 15px;
-        }
-
-        footer {
-            background: #123c69;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 28px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px;
-            }
-        }
-        .intro p,
+/* Paragraph */
+.intro p,
 .tip p {
     line-height: 1.8;
     margin-bottom: 12px;
 }
-        .tip h3 {
-    color: #1e5d91;
-    font-size: 21px;
-    margin-bottom: 10px;
-    font-weight: 700;
+
+/* Lists */
+ul {
+    padding-left: 25px;
 }
-        .tip {
+
+.intro li,
+.tip li {
+    margin-bottom: 9px;
+    line-height: 1.7;
+}
+
+/* Tip icon */
+.tip {
     position: relative;
     overflow: hidden;
 }
@@ -153,52 +145,94 @@ h2::after {
 .tip::before {
     content: "💡";
     position: absolute;
-    top: 20px;
+    top: 18px;
     right: 22px;
-    font-size: 28px;
-    opacity: 0.15;
-}
-        .intro ul,
-.tip ul {
-    padding-left: 22px;
-    margin-top: 10px;
+    font-size: 32px;
+    opacity: 0.12;
 }
 
-.intro li,
-.tip li {
-    margin-bottom: 8px;
-    line-height: 1.7;
-}
-        @media (max-width: 600px) {
-    .intro,
-    .tip {
-        padding: 20px;
-        margin-bottom: 15px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    .tip::before {
-        font-size: 24px;
-        right: 16px;
-        top: 16px;
-    }
-}
-        a {
+/* Home button */
+.home-button {
+    display: inline-block;
+    background: #123c69;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    margin-top: 12px;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
-a:hover {
-    opacity: 0.85;
+.home-button:hover {
+    background: #1e5d91;
+    transform: translateY(-2px);
 }
-        .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+
+/* Footer */
+footer {
+    background: #0d2f52;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
 }
-    </style>
+
+footer p {
+    margin: 4px 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav {
+        padding: 10px 8px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 8px 12px;
+        margin: 3px 1px;
+    }
+
+    .container {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .intro,
+    .tip {
+        padding: 22px;
+        margin-bottom: 18px;
+        border-radius: 13px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .tip::before {
+        font-size: 25px;
+        right: 15px;
+        top: 15px;
+    }
+}
 </head>
 
 <body>
