@@ -1,18 +1,793 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Computer Tips for Beginners: A Step-by-Step Guide</title>
+    <title>Computer Tips for Beginners: A Step-by-Step Guide</title>
 
-  <meta name="description" content="Learn computer tips for beginners with this step-by-step guide. Discover how to set up a computer, connect to Wi-Fi, install apps, and more.">
+    <meta name="description" content="Learn computer tips for beginners with this step-by-step guide. Discover how to set up a computer, connect to Wi-Fi, install apps, and more.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #123c69, #1e5d91);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 4px solid #0d2f52;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        nav {
+            background: #0d2f52;
+            text-align: center;
+            padding: 14px 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 4px;
+            padding: 9px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #123c69;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background: linear-gradient(135deg, #ffffff, #eaf3fb);
+            padding: 30px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+            border: 1px solid #e0e8f0;
+        }
+
+        .intro h2 {
+            color: #123c69;
+            margin-bottom: 12px;
+            font-size: 26px;
+            font-weight: 800;
+        }
+
+        .tip {
+            background: white;
+            padding: 28px;
+            margin-bottom: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+            border-left: 4px solid #1e5d91;
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+            scroll-margin-top: 90px;
+        }
+
+        .tip:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+        }
+
+        .tip h2 {
+            color: #123c69;
+            margin-bottom: 12px;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .tip h3 {
+            margin-top: 18px;
+            margin-bottom: 7px;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .tip p {
+            margin-bottom: 12px;
+        }
+
+        .tip ul,
+        .tip ol {
+            padding-left: 25px;
+            margin-bottom: 14px;
+        }
+
+        .tip li {
+            margin-bottom: 7px;
+        }
+
+        .tip a {
+            color: #1e5d91;
+            overflow-wrap: anywhere;
+        }
+
+        .home-button {
+            display: inline-block;
+            background: #123c69;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            margin-top: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .home-button:hover {
+            background: #1e5d91;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #0d2f52, #123c69);
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+            margin-top: 60px;
+            border-top: 4px solid #1e5d91;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                padding: 8px 12px;
+            }
+
+            .tip,
+            .intro {
+                padding: 20px;
+            }
+
+            .tip h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Computer Tips for Beginners: A Step-by-Step Guide</h1>
 
-  <p>Are you new to computers and want to learn the basics? This guide will help you get started.</p>
+    <header>
+        <h1>💻 Computer Tips for Beginners</h1>
+        <p>Learn computer basics step by step</p>
+    </header>
 
-  <p>In this article, you will learn how to set up a computer, connect to Wi-Fi, check your computer specifications, install apps, and more.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="computer-tips.html">Computer Tips</a>
+        <a href="windows.html">Windows</a>
+        <a href="internet.html">Internet</a>
+        <a href="software.html">Software</a>
+    </nav>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>Computer Tips &amp; Tricks</h2>
+
+            <p>
+                Are you new to computers and want to learn the basics?
+                This step-by-step guide explains how to set up a computer,
+                connect to Wi-Fi, check your computer specifications,
+                install apps, and perform other essential tasks.
+            </p>
+
+            <p>
+                Whether you are using a desktop computer or a laptop,
+                these beginner-friendly instructions will help you get
+                started and use your computer more confidently.
+            </p>
+
+            <a href="index.html" class="home-button">
+                🏠 Back to Home
+            </a>
+        </section>
+
+        <!-- H2 1: Computer Setup -->
+        <article class="tip">
+            <h2>1. Computer Setup</h2>
+
+            <p>
+                Setting up a computer correctly is the first step for
+                every beginner. Before using it, connect the necessary
+                devices and check that everything is ready.
+            </p>
+
+            <h3>What You Need Before Starting</h3>
+
+            <ul>
+                <li>A desktop computer or laptop.</li>
+                <li>A monitor if you are using a desktop.</li>
+                <li>A keyboard and mouse for a desktop computer.</li>
+                <li>A suitable power cable or charger.</li>
+                <li>A safe power outlet or power strip.</li>
+            </ul>
+
+            <h3>How to Connect a Desktop Computer</h3>
+
+            <ol>
+                <li>
+                    Place the computer and monitor on a stable desk
+                    with enough space for ventilation.
+                </li>
+                <li>
+                    Connect the monitor to the computer using a
+                    compatible HDMI, DisplayPort, or other video cable.
+                </li>
+                <li>
+                    Connect the keyboard and mouse to available USB ports.
+                </li>
+                <li>
+                    Connect the computer and monitor to suitable
+                    power outlets.
+                </li>
+                <li>
+                    Check that the cables are firmly connected and
+                    are not damaged.
+                </li>
+            </ol>
+
+            <p>
+                If your monitor uses a separate power cable, make sure
+                that it is connected too. Connecting the monitor's
+                power cable alone will not connect it to the computer
+                for displaying images.
+            </p>
+
+            <h3>What About a Laptop?</h3>
+
+            <p>
+                A laptop already has a built-in screen, keyboard,
+                and touchpad. Connect its charger if needed, place it
+                on a hard, flat surface, and make sure its ventilation
+                openings are not blocked.
+            </p>
+
+            <h3>Check Everything Before Turning It On</h3>
+
+            <p>
+                Make sure the power connections are secure, the monitor
+                is connected correctly, and the keyboard and mouse are
+                ready to use. You can then proceed to turn on your
+                computer.
+            </p>
+        </article>
+
+        <!-- H2 2: UPS -->
+        <article class="tip">
+            <h2>2. Why Is a UPS Important for Your Computer?</h2>
+
+            <p>
+                A UPS (Uninterruptible Power Supply) provides temporary
+                battery power when the main electricity supply fails.
+                It can help you save your work and shut down your
+                computer safely during a power interruption.
+            </p>
+
+            <h3>Why Should Beginners Consider Using a UPS?</h3>
+
+            <ul>
+                <li>
+                    It provides backup power for a limited time during
+                    a power cut.
+                </li>
+                <li>
+                    It gives you time to save open documents and files.
+                </li>
+                <li>
+                    It helps prevent unexpected shutdowns while you
+                    are working.
+                </li>
+                <li>
+                    Some UPS models also provide protection against
+                    certain power disturbances.
+                </li>
+            </ul>
+
+            <h3>How to Use a UPS</h3>
+
+            <ol>
+                <li>
+                    Choose a UPS with a suitable power capacity for
+                    your computer and other essential devices.
+                </li>
+                <li>
+                    Read the manufacturer's instructions before
+                    connecting the equipment.
+                </li>
+                <li>
+                    Connect the computer and, if supported by the
+                    UPS capacity, the monitor to its battery-backed
+                    outlets.
+                </li>
+                <li>
+                    Charge and maintain the UPS according to the
+                    manufacturer's instructions.
+                </li>
+                <li>
+                    When electricity fails, save your work and shut
+                    down the computer before the backup battery runs out.
+                </li>
+            </ol>
+
+            <h3>Can You Keep Working Until the Battery Is Empty?</h3>
+
+            <p>
+                No. Backup time depends on the UPS battery, its capacity,
+                and the connected equipment. It is safer to save your
+                work and shut down promptly when the power goes out.
+            </p>
+
+            <p>
+                Remember that a UPS does not provide unlimited backup
+                power. It also does not replace regular backups of
+                important files.
+            </p>
+        </article>
+
+        <!-- H2 3: Wi-Fi Connection -->
+        <article class="tip">
+            <h2>3. How to Connect Your Computer to Wi-Fi</h2>
+
+            <p>
+                A Wi-Fi connection lets your computer access the
+                internet without a direct network cable. You usually
+                need a working wireless network and its password.
+            </p>
+
+            <h3>Step 1: Open Settings</h3>
+
+            <p>
+                Click the Start button on your Windows computer and
+                select Settings. You can also press
+                <strong>Windows + I</strong> on your keyboard.
+            </p>
+
+            <h3>Step 2: Open Network &amp; Internet</h3>
+
+            <p>
+                In the Settings window, select
+                <strong>Network &amp; Internet</strong>.
+                On Windows 11, this option appears in the Settings
+                navigation menu.
+            </p>
+
+            <h3>Step 3: Select Wi-Fi</h3>
+
+            <p>
+                Open the Wi-Fi section and make sure Wi-Fi is turned on.
+                Select the available networks to see the Wi-Fi names
+                around you.
+            </p>
+
+            <h3>Step 4: Choose Your Network and Enter the Password</h3>
+
+            <ol>
+                <li>Select your home or office Wi-Fi network.</li>
+                <li>Click Connect.</li>
+                <li>Enter the correct Wi-Fi password.</li>
+                <li>
+                    Click Next or continue with the on-screen
+                    instructions.
+                </li>
+            </ol>
+
+            <p>
+                When the connection succeeds, Windows will show that
+                you are connected to the network.
+            </p>
+
+            <h3>What to Do If Wi-Fi Is Not Connecting</h3>
+
+            <ul>
+                <li>Check that Wi-Fi is turned on.</li>
+                <li>Make sure you entered the correct password.</li>
+                <li>
+                    Move closer to the router if the signal is weak.
+                </li>
+                <li>
+                    Restart the router if you are authorised to do so.
+                </li>
+                <li>
+                    Disconnect and reconnect to the network.
+                </li>
+                <li>
+                    If the Wi-Fi option is missing, check whether your
+                    computer has a wireless adapter and whether its
+                    driver is working.
+                </li>
+            </ul>
+
+            <h3>How to Reduce Data Usage on a Mobile Hotspot</h3>
+
+            <p>
+                If you connect your computer through your phone's
+                hotspot, Windows may use more mobile data than expected.
+                You can reduce this by setting the network as metered.
+            </p>
+
+            <ol>
+                <li>Open Settings.</li>
+                <li>Select Network &amp; Internet, then Wi-Fi.</li>
+                <li>Open your connected network's properties.</li>
+                <li>
+                    Turn on <strong>Metered connection</strong> if
+                    the option is available.
+                </li>
+            </ol>
+
+            <p>
+                A metered connection can help limit some automatic
+                downloads, but it does not block all data usage.
+                Windows menus may differ slightly by version.
+            </p>
+        </article>
+
+        <!-- H2 4: Computer Specifications -->
+        <article class="tip">
+            <h2>4. How to Check Your Computer Specifications</h2>
+
+            <p>
+                Computer specifications tell you important details
+                about your device, including its processor, RAM,
+                Windows version, and system type. These details help
+                you understand what your computer can do and whether
+                it meets an app's requirements.
+            </p>
+
+            <h3>How to Check Specifications in Windows</h3>
+
+            <ol>
+                <li>Click the Start button.</li>
+                <li>Open Settings.</li>
+                <li>Select System.</li>
+                <li>
+                    Scroll down and choose About.
+                </li>
+                <li>
+                    Look under Device specifications and Windows
+                    specifications.
+                </li>
+            </ol>
+
+            <h3>Important Details to Look For</h3>
+
+            <ul>
+                <li>
+                    <strong>Processor:</strong> The CPU that performs
+                    the computer's main processing tasks.
+                </li>
+                <li>
+                    <strong>Installed RAM:</strong> Memory used by
+                    running programs and tasks.
+                </li>
+                <li>
+                    <strong>System type:</strong> Shows whether Windows
+                    is 64-bit or 32-bit, among other system details.
+                </li>
+                <li>
+                    <strong>Windows edition and version:</strong>
+                    Identifies the installed Windows release.
+                </li>
+            </ul>
+
+            <h3>How to Check Storage Space</h3>
+
+            <p>
+                Open Settings, select System, and choose Storage.
+                There you can review how much storage is used and
+                how much space remains available.
+            </p>
+
+            <p>
+                You can also open File Explorer, select This PC,
+                and view the available space on your drives.
+            </p>
+
+            <h3>Why Should You Know These Details?</h3>
+
+            <p>
+                Before installing software, compare your computer's
+                specifications with the software's system requirements.
+                This helps you avoid downloading programs that your
+                device cannot run properly.
+            </p>
+        </article>
+
+        <!-- H2 5: Download and Install Apps -->
+        <article class="tip">
+            <h2>5. How to Download and Install Apps</h2>
+
+            <p>
+                Applications allow you to perform tasks such as
+                browsing the internet, editing documents, attending
+                online classes, and playing media files.
+            </p>
+
+            <h3>Method 1: Install an App from Microsoft Store</h3>
+
+            <ol>
+                <li>Open the Start menu.</li>
+                <li>Search for Microsoft Store and open it.</li>
+                <li>Search for the app you need.</li>
+                <li>
+                    Check the app name and publisher carefully.
+                </li>
+                <li>
+                    Select Get, Install, or the available installation
+                    option.
+                </li>
+                <li>
+                    Wait for the installation to finish, then open
+                    the app.
+                </li>
+            </ol>
+
+            <h3>Method 2: Download from the Official Website</h3>
+
+            <ol>
+                <li>
+                    Open a web browser such as Microsoft Edge.
+                </li>
+                <li>
+                    Visit the software developer's official website.
+                </li>
+                <li>
+                    Find the download page for the correct application.
+                </li>
+                <li>
+                    Check that the version supports your computer.
+                </li>
+                <li>
+                    Download the installer and wait for it to finish.
+                </li>
+                <li>
+                    Open the downloaded installer and follow the
+                    on-screen instructions.
+                </li>
+            </ol>
+
+            <h3>Important Safety Tips</h3>
+
+            <ul>
+                <li>
+                    Download programs only from trusted sources.
+                </li>
+                <li>
+                    Avoid suspicious advertisements and fake download
+                    buttons.
+                </li>
+                <li>
+                    Read installation screens before clicking Next.
+                </li>
+                <li>
+                    Avoid optional software that you do not need.
+                </li>
+                <li>
+                    Keep Windows Security and your software updated.
+                </li>
+            </ul>
+
+            <h3>What If an App Does Not Install?</h3>
+
+            <p>
+                Check your internet connection, available storage,
+                system requirements, and any error message shown
+                by the installer. Make sure you have permission
+                to install the software on that computer.
+            </p>
+        </article>
+
+        <!-- H2 6: Turn Computer On and Off -->
+        <article class="tip">
+            <h2>6. How to Turn a Computer On and Off</h2>
+
+            <p>
+                Learning the correct way to start and shut down a
+                computer is an essential skill for beginners.
+                Proper shutdown helps prevent the loss of unsaved work.
+            </p>
+
+            <h3>How to Turn On a Desktop Computer</h3>
+
+            <ol>
+                <li>
+                    Check that the power cables are connected properly.
+                </li>
+                <li>
+                    Turn on the monitor if it has a separate power button.
+                </li>
+                <li>
+                    Press the computer's power button once.
+                </li>
+                <li>
+                    Wait for Windows to load.
+                </li>
+                <li>
+                    Sign in if a password or PIN is required.
+                </li>
+            </ol>
+
+            <h3>How to Turn On a Laptop</h3>
+
+            <p>
+                Open the laptop and press its power button.
+                If the battery is empty, connect the charger and
+                allow it to charge before trying again.
+            </p>
+
+            <h3>How to Shut Down Windows Properly</h3>
+
+            <ol>
+                <li>Save your open documents and files.</li>
+                <li>Close programs when you have finished using them.</li>
+                <li>Click the Start button.</li>
+                <li>Select the Power option.</li>
+                <li>Choose Shut down.</li>
+                <li>
+                    Wait until the computer has completely shut down.
+                </li>
+            </ol>
+
+            <h3>Why Should You Avoid Force Shutdown?</h3>
+
+            <p>
+                Holding the power button to force a shutdown may cause
+                unsaved work to be lost. Use this method only when the
+                computer is unresponsive and normal shutdown is not
+                possible.
+            </p>
+
+            <h3>Shut Down or Sleep: Which Should You Choose?</h3>
+
+            <p>
+                Sleep mode is useful when you plan to return to your
+                work soon. Shut down the computer when you have
+                finished using it for a longer period or when
+                troubleshooting requires a restart or shutdown.
+            </p>
+        </article>
+
+        <!-- H2 7: Use a Computer Mouse -->
+        <article class="tip">
+            <h2>7. How to Use a Computer Mouse</h2>
+
+            <p>
+                A mouse helps you move the pointer, select items,
+                open programs, and interact with Windows. Learning
+                basic mouse operations makes computer use easier.
+            </p>
+
+            <h3>Basic Parts of a Mouse</h3>
+
+            <ul>
+                <li>
+                    <strong>Left button:</strong> Selects items and
+                    performs most clicking actions.
+                </li>
+                <li>
+                    <strong>Right button:</strong> Opens a context
+                    menu with additional options.
+                </li>
+                <li>
+                    <strong>Scroll wheel:</strong> Helps you move
+                    up and down a page.
+                </li>
+            </ul>
+
+            <h3>Essential Mouse Tips for Beginners</h3>
+
+            <ul>
+                <li>
+                    Hold the mouse gently and keep your hand relaxed.
+                </li>
+                <li>
+                    Place it on a flat surface or a suitable mouse pad.
+                </li>
+                <li>
+                    Move the mouse smoothly to control the pointer.
+                </li>
+                <li>
+                    Adjust pointer speed in Windows settings if needed.
+                </li>
+                <li>
+                    Keep your wrist in a comfortable, neutral position.
+                </li>
+            </ul>
+
+            <h3>Common Mouse Actions</h3>
+
+            <ul>
+                <li>
+                    <strong>Single-click:</strong> Usually selects
+                    an item.
+                </li>
+                <li>
+                    <strong>Double-click:</strong> Usually opens a
+                    file or folder.
+                </li>
+                <li>
+                    <strong>Right-click:</strong> Opens a menu of
+                    additional options.
+                </li>
+                <li>
+                    <strong>Click and drag:</strong> Moves an item
+                    or selects text, depending on where you use it.
+                </li>
+                <li>
+                    <strong>Scroll:</strong> Moves through a webpage
+                    or document.
+                </li>
+            </ul>
+
+            <h3>How to Fix Common Mouse Problems</h3>
+
+            <p>
+                If the mouse does not respond, check its USB
+                connection or wireless battery. Try another USB port
+                if available, and ensure that the mouse is switched on
+                if it is wireless.
+            </p>
+
+            <p>
+                If the pointer moves irregularly, clean the sensor
+                gently and try using the mouse on a suitable surface.
+                You can also check the pointer settings in Windows.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Computer Tips BD. All Rights Reserved.</p>
+        <p>Computer Tips • Windows • Internet • Software</p>
+    </footer>
+
 </body>
 </html>
