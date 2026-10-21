@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Computer Tips BD - Computer, Windows & Technology Tips</title>
+    <meta name="description" content="Learn computer tips, Windows tricks, internet guides and useful software tutorials with Computer Tips BD.">
 
     <style>
         * {
@@ -13,19 +14,18 @@
             box-sizing: border-box;
         }
 
-        body <
+        body {
             font-family: Arial, sans-serif;
             background: #f4f7fb;
             color: #222;
             line-height: 1.6;
         }
 
-         header {
-    background: linear-gradient(135deg, #123c69, #1e5d91);
-    color: white;
-    padding: 28px 20px;
-    border-bottom: 4px solid #0d2f52;
-}
+        header {
+            background: linear-gradient(135deg, #123c69, #1e5d91);
+            color: white;
+            padding: 28px 20px;
+            border-bottom: 4px solid #0d2f52;
         }
 
         .header-content {
@@ -48,14 +48,13 @@
             opacity: 0.9;
         }
 
-         nav {
-    background: #0d2f52;
-    padding: 14px 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        nav {
+            background: #0d2f52;
+            padding: 14px 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav ul {
@@ -68,118 +67,156 @@
             gap: 10px;
         }
 
-         nav a {
-    color: white;
-    text-decoration: none;
-    padding: 9px 16px;
-    border-radius: 20px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 9px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s ease;
         }
 
-         nav a:hover {
-    background: white;
-    color: #123c69;
-    transform: translateY(-2px);
-}
+        nav a:hover {
+            background: white;
+            color: #123c69;
         }
 
-         .hero {
-    max-width: 1100px;
-    margin: 35px auto;
-    padding: 70px 25px;
-    background: linear-gradient(135deg, #ffffff, #eaf3fb);
-    text-align: center;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    border: 1px solid #e0e8f0;
-}
-
-         .hero h1 {
-    font-size: 44px;
-    color: #123c69;
-    margin-bottom: 15px;
-    font-weight: 800;
-    letter-spacing: -1px;
-}
-
-        .hero p {
-            color: #555;
-            font-size: 17px;
-            margin-bottom: 20px;
-        }
-.hero-button {
-    display: inline-block;
-    margin: 5px 0 10px;
-    padding: 12px 22px;
-    background: #123c69;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.hero-button:hover {
-    background: #1e5d91;
-}
-         .search-box {
-    max-width: 650px;
-    margin: 25px auto 0;
-    display: flex;
-    background: white;
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.10);
-}
-
-        .search-box input {
-    flex: 1;
-    padding: 14px 16px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    font-size: 15px;
-}
-         .search-box button {
-    padding: 13px 22px;
-    border: none;
-    background: #123c69;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.search-box button:hover {
-    background: #1e5d91;
-    transform: translateY(-1px);
-}
         .container {
             max-width: 1100px;
             margin: 30px auto;
             padding: 0 20px;
         }
 
+        .hero {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 70px 25px;
+            background: linear-gradient(135deg, #ffffff, #eaf3fb);
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            border: 1px solid #e0e8f0;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            color: #123c69;
+            margin-bottom: 15px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            color: #555;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin: 5px 0 10px;
+            padding: 12px 22px;
+            background: #123c69;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .hero-button:hover {
+            background: #1e5d91;
+        }
+
+        .search-box {
+            max-width: 650px;
+            margin: 25px auto 0;
+            display: flex;
+            background: white;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+        }
+
+        .search-box input {
+            flex: 1;
+            min-width: 0;
+            padding: 14px 16px;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .search-box button {
+            padding: 13px 22px;
+            border: none;
+            background: #123c69;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .search-box button:hover {
+            background: #1e5d91;
+        }
+
         .section-title {
-    text-align: center;
-    color: #123c69;
-    margin-bottom: 28px;
-    font-size: 30px;
-    font-weight: 800;
-    position: relative;
-}
-.section-title::after {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 4px;
-    background: #1e5d91;
-    margin: 10px auto 0;
-    border-radius: 5px;
-}
+            text-align: center;
+            color: #123c69;
+            margin-bottom: 28px;
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 55px;
+            height: 4px;
+            background: #1e5d91;
+            margin: 10px auto 0;
+            border-radius: 5px;
+        }
+
+        /* Featured beginner article */
+
+        .featured-article {
+            margin: 25px auto 35px;
+            padding: 28px;
+            background: linear-gradient(135deg, #ffffff, #eaf3fb);
+            border: 1px solid #d8e5f2;
+            border-left: 5px solid #1e5d91;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+        }
+
+        .featured-label {
+            display: inline-block;
+            background: #123c69;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .featured-article h2 {
+            color: #123c69;
+            font-size: 27px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .featured-article p {
+            color: #555;
+            margin-bottom: 18px;
+        }
+
         .cards {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -187,20 +224,21 @@
         }
 
         .card {
+            display: block;
+            height: 100%;
             background: white;
             padding: 25px 18px;
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-}
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+        }
+
         .card .icon {
             font-size: 40px;
             margin-bottom: 10px;
@@ -221,145 +259,127 @@
         }
 
         .article {
-    background: white;
-    padding: 22px;
-    margin-bottom: 18px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-    border-left: 4px solid #1e5d91;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+            background: white;
+            padding: 22px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            border-left: 4px solid #1e5d91;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-.article:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 7px 18px rgba(0,0,0,0.10);
-}
+        .article:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 18px rgba(0,0,0,0.10);
+        }
 
-         .article h3 {
-    color: #123c69;
-    margin-bottom: 8px;
-    font-size: 20px;
-    line-height: 1.4;
-}
+        .article h3 {
+            color: #123c69;
+            margin-bottom: 8px;
+            font-size: 20px;
+            line-height: 1.4;
+        }
 
-.article h3 a {
-    transition: color 0.3s ease;
-}
+        .article h3 a {
+            color: #123c69;
+            text-decoration: none;
+        }
 
-.article h3 a:hover {
-    color: #1e5d91 !important;
-}
+        .article h3 a:hover {
+            color: #1e5d91;
+        }
 
-       .article p {
-    color: #666;
-    font-size: 15px;
-    line-height: 1.7;
-    margin: 0;
-}
-        /* Portfolio Sections */
+        .article p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.7;
+        }
 
-.about-section,
-.skills-section,
-.projects-section {
-    margin-top: 50px;
-}
+        /* About, skills and projects */
 
-.about-card,
-.skills-card,
-.projects-card {
-    background: white;
-    border-radius: 14px;
-    padding: 28px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-    border: 1px solid #e2e8f0;
-}
+        .about-section,
+        .skills-section,
+        .projects-section {
+            margin-top: 50px;
+        }
 
-.about-card h3,
-.skill h3,
-.project h3 {
-    color: #123c69;
-    margin-bottom: 10px;
-}
+        .about-card,
+        .skills-card,
+        .projects-card {
+            background: white;
+            border-radius: 14px;
+            padding: 28px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+            border: 1px solid #e2e8f0;
+        }
 
-.about-card p {
-    color: #555;
-    margin-bottom: 12px;
-    line-height: 1.8;
-}
+        .about-card h3,
+        .skill h3,
+        .project h3 {
+            color: #123c69;
+            margin-bottom: 10px;
+        }
 
-/* Skills */
+        .about-card p {
+            color: #555;
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
 
-.skills-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-}
+        .skills-card {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
 
-.skill {
-    padding: 20px;
-    background: #f4f7fb;
-    border-radius: 10px;
-    border-left: 4px solid #1e5d91;
-}
+        .skill {
+            padding: 20px;
+            background: #f4f7fb;
+            border-radius: 10px;
+            border-left: 4px solid #1e5d91;
+        }
 
-.skill p,
-.project p {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.7;
-}
+        .skill p,
+        .project p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+        }
 
-/* Projects */
+        .projects-card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
 
-.projects-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
+        .project {
+            padding: 20px;
+            background: #f4f7fb;
+            border-radius: 10px;
+            border-left: 4px solid #1e5d91;
+        }
 
-.project {
-    padding: 20px;
-    background: #f4f7fb;
-    border-radius: 10px;
-    border-left: 4px solid #1e5d91;
-}
+        footer {
+            margin-top: 60px;
+            background: linear-gradient(135deg, #0d2f52, #123c69);
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+            border-top: 4px solid #1e5d91;
+        }
 
-/* Portfolio Mobile */
-
-@media (max-width: 700px) {
-
-    .skills-card {
-        grid-template-columns: 1fr;
-    }
-
-    .projects-card {
-        grid-template-columns: 1fr;
-    }
-
-    .about-card,
-    .skills-card,
-    .projects-card {
-        padding: 20px;
-    }
-}
-         footer {
-    margin-top: 60px;
-    background: linear-gradient(135deg, #0d2f52, #123c69);
-    color: white;
-    text-align: center;
-    padding: 35px 15px;
-    border-top: 4px solid #1e5d91;
-}
         footer p {
-    margin: 7px 0;
-    font-size: 14px;
-    opacity: 0.9;
-}
+            margin: 7px 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
 
-footer p:first-child {
-    font-weight: bold;
-    opacity: 1;
-}
+        footer p:first-child {
+            font-weight: bold;
+            opacity: 1;
+        }
+
+        /* Tablet */
 
         @media (max-width: 800px) {
             .cards {
@@ -367,69 +387,91 @@ footer p:first-child {
             }
 
             .hero h1 {
-                font-size: 30px;
+                font-size: 34px;
+            }
+
+            .projects-card {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @media (max-width: 500px)  @media (max-width: 500px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
+        /* Mobile */
 
-    .header-content {
-        justify-content: center;
-        text-align: center;
-    }
+        @media (max-width: 500px) {
+            .cards,
+            .skills-card,
+            .projects-card {
+                grid-template-columns: 1fr;
+            }
 
-    .logo {
-        font-size: 24px;
-    }
+            .header-content {
+                justify-content: center;
+                text-align: center;
+            }
 
-    .tagline {
-        font-size: 13px;
-    }
+            .logo {
+                font-size: 24px;
+            }
 
-    nav ul {
-        gap: 6px;
-    }
+            .tagline {
+                font-size: 13px;
+            }
 
-    nav a {
-        padding: 7px 11px;
-        font-size: 13px;
-    }
+            nav ul {
+                gap: 6px;
+            }
 
-    .hero {
-        margin: 20px 12px;
-        padding: 45px 18px;
-    }
+            nav a {
+                padding: 7px 10px;
+                font-size: 13px;
+            }
 
-    .hero h1 {
-        font-size: 30px;
-    }
+            .hero {
+                margin: 20px 12px;
+                padding: 45px 18px;
+            }
 
-    .hero p {
-        font-size: 15px;
-    }
+            .hero h1 {
+                font-size: 30px;
+            }
 
-    .search-box {
-        flex-direction: column;
-        gap: 8px;
-    }
+            .hero p {
+                font-size: 15px;
+            }
 
-    .search-box input,
-    .search-box button {
-        border-radius: 6px;
-        width: 100%;
-    }
+            .search-box {
+                flex-direction: column;
+                gap: 8px;
+            }
 
-    .container {
-        padding: 0 12px;
-    }
+            .search-box input,
+            .search-box button {
+                border-radius: 6px;
+                width: 100%;
+            }
 
-    .section-title {
-        font-size: 26px;
-    }
-}
+            .container {
+                padding: 0 12px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .featured-article {
+                padding: 20px;
+            }
+
+            .featured-article h2 {
+                font-size: 23px;
+            }
+
+            .about-card,
+            .skills-card,
+            .projects-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -454,6 +496,26 @@ footer p:first-child {
         </ul>
     </nav>
 
+    <!-- Featured article appears near the top of the homepage -->
+
+    <div class="container">
+        <section class="featured-article">
+            <span class="featured-label">BEGINNER'S GUIDE</span>
+
+            <h2>Computer Tips for Beginners: A Step-by-Step Guide</h2>
+
+            <p>
+                New to computers? Learn how to set up a computer,
+                connect to Wi-Fi, check computer specifications,
+                install apps, use a mouse, and more.
+            </p>
+
+            <a href="computer-tips-for-beginners.html" class="hero-button">
+                Read the Full Guide →
+            </a>
+        </section>
+    </div>
+
     <section class="hero">
         <h1>Learn Computer Easily</h1>
 
@@ -461,60 +523,73 @@ footer p:first-child {
             Simple computer tips, Windows tricks, internet guides
             and useful software tutorials.
         </p>
-<a href="computer-tips.html" class="hero-button">
-    Explore Computer Tips →
-</a>
+
+        <a href="computer-tips.html" class="hero-button">
+            Explore Computer Tips →
+        </a>
+
         <div class="search-box">
-            <input type="text" placeholder="Search computer tips...">
-            <button>Search</button>
+            <input
+                type="text"
+                placeholder="Search computer tips..."
+                aria-label="Search computer tips"
+            >
+            <button type="button">Search</button>
         </div>
     </section>
 
-    <div class="container">
+    <main class="container">
 
-        <h2 class="section-title">Popular Topics</h2>
+        <section class="popular-section">
+            <h2 class="section-title">Popular Topics</h2>
 
-         
-<a href="computer-tips.html" style="text-decoration:none; color:inherit;">
-            <div class="card">
-                <div class="icon">💻</div>
-                <h3>Computer Tips</h3>
-                <p>Learn useful computer tips and tricks easily.</p>
-            </div> 
-</a>
-<a href="windows.html" style="text-decoration:none; color:inherit;">
-            <div class="card">
-                <div class="icon">🪟</div>
-                <h3>Windows Tips</h3>
-                <p>Discover helpful Windows settings and solutions.</p>
-            </div>
-</a>
- <a href="internet.html" style="text-decoration:none; color:inherit;">           
-        <div class="card">
-                <div class="icon">🌐</div>
-                <h3>Internet Tips</h3>
-                <p>Learn useful internet tips and online solutions.</p>
-            </div>
-</a>
-  <a href="software.html" style="text-decoration:none; color:inherit;">   
-        <div class="card">
-                <div class="icon">⚙️</div>
-                <h3>Software Guides</h3>
-                <p>Simple guides for useful computer software.</p>
-            </div>
-</a>
-        </div>
+            <div class="cards">
 
-        <div class="latest">
+                <a href="computer-tips.html" style="text-decoration:none; color:inherit;">
+                    <div class="card">
+                        <div class="icon">💻</div>
+                        <h3>Computer Tips</h3>
+                        <p>Learn useful computer tips and tricks easily.</p>
+                    </div>
+                </a>
+
+                <a href="windows.html" style="text-decoration:none; color:inherit;">
+                    <div class="card">
+                        <div class="icon">🪟</div>
+                        <h3>Windows Tips</h3>
+                        <p>Discover helpful Windows settings and solutions.</p>
+                    </div>
+                </a>
+
+                <a href="internet.html" style="text-decoration:none; color:inherit;">
+                    <div class="card">
+                        <div class="icon">🌐</div>
+                        <h3>Internet Tips</h3>
+                        <p>Learn useful internet tips and online solutions.</p>
+                    </div>
+                </a>
+
+                <a href="software.html" style="text-decoration:none; color:inherit;">
+                    <div class="card">
+                        <div class="icon">⚙️</div>
+                        <h3>Software Guides</h3>
+                        <p>Simple guides for useful computer software.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="latest">
 
             <h2 class="section-title">Latest Computer Tips</h2>
 
             <div class="article">
-                 <h3>
-    <a href="faster-computer.html" style="color:#123c69; text-decoration:none;">
-        How to Make Your Computer Faster
-    </a>
-</h3>
+                <h3>
+                    <a href="faster-computer.html">
+                        How to Make Your Computer Faster
+                    </a>
+                </h3>
                 <p>
                     Learn some simple ways to improve your computer's
                     performance and speed.
@@ -537,100 +612,112 @@ footer p:first-child {
                 </p>
             </div>
 
-        </div>
- <section class="about-section">
+        </section>
 
-    <h2 class="section-title">About Me</h2>
+        <section class="about-section">
 
-    <div class="about-card">
+            <h2 class="section-title">About Me</h2>
 
-        <h3>Hi, I'm a Student Learning Digital Skills</h3>
+            <div class="about-card">
+                <h3>Hi, I'm a Student Learning Digital Skills</h3>
 
-        <p>
-            I am a student interested in technology, website creation,
-            SEO and digital skills. I am currently learning these skills
-            through practical projects.
-        </p>
+                <p>
+                    I am a student interested in technology, website creation,
+                    SEO and digital skills. I am currently learning these skills
+                    through practical projects.
+                </p>
 
-        <p>
-            Computer Tips BD is my personal practice project. I am using
-            this website to learn HTML, CSS, website structure, content
-            writing and basic SEO step by step.
-        </p>
+                <p>
+                    Computer Tips BD is my personal practice project. I am using
+                    this website to learn HTML, CSS, website structure, content
+                    writing and basic SEO step by step.
+                </p>
+            </div>
 
-    </div>
-
-</section>
-    </section>
+        </section>
 
         <section class="skills-section">
 
-    <h2 class="section-title">My Skills</h2>
+            <h2 class="section-title">My Skills</h2>
 
-    <div class="skills-card">
+            <div class="skills-card">
 
-        <div class="skill">
-            <h3>💻 HTML & CSS</h3>
-            <p>Currently learning website structure, styling and basic responsive design.</p>
-        </div>
+                <div class="skill">
+                    <h3>💻 HTML & CSS</h3>
+                    <p>
+                        Currently learning website structure, styling
+                        and basic responsive design.
+                    </p>
+                </div>
 
-        <div class="skill">
-            <h3>🔎 SEO</h3>
-            <p>Learning keyword research, search intent and basic on-page SEO.</p>
-        </div>
+                <div class="skill">
+                    <h3>🔎 SEO</h3>
+                    <p>
+                        Learning keyword research, search intent
+                        and basic on-page SEO.
+                    </p>
+                </div>
 
-        <div class="skill">
-            <h3>✍️ Content Writing</h3>
-            <p>Learning to create simple, useful and reader-friendly technology content.</p>
-        </div>
+                <div class="skill">
+                    <h3>✍️ Content Writing</h3>
+                    <p>
+                        Learning to create simple, useful and
+                        reader-friendly technology content.
+                    </p>
+                </div>
 
-        <div class="skill">
-            <h3>🌐 Website Creation</h3>
-            <p>Practicing website creation and management through GitHub Pages.</p>
-        </div>
+                <div class="skill">
+                    <h3>🌐 Website Creation</h3>
+                    <p>
+                        Practicing website creation and management
+                        through GitHub Pages.
+                    </p>
+                </div>
 
-    </div>
+            </div>
 
-</section>
-      <section class="projects-section">
+        </section>
 
-    <h2 class="section-title">My Projects</h2>
+        <section class="projects-section">
 
-    <div class="projects-card">
+            <h2 class="section-title">My Projects</h2>
 
-        <div class="project">
-            <h3>💻 Computer Tips BD</h3>
-            <p>
-                My personal practice website where I am learning website
-                creation, HTML, CSS and technology content.
-            </p>
-        </div>
+            <div class="projects-card">
 
-        <div class="project">
-            <h3>🔎 SEO Learning Practice</h3>
-            <p>
-                Practicing keyword research, search intent and basic SEO
-                concepts as part of my learning journey.
-            </p>
-        </div>
+                <div class="project">
+                    <h3>💻 Computer Tips BD</h3>
+                    <p>
+                        My personal practice website where I am learning
+                        website creation, HTML, CSS and technology content.
+                    </p>
+                </div>
 
-        <div class="project">
-            <h3>✍️ Technology Content Practice</h3>
-            <p>
-                Practicing how to research, organize and write useful
-                computer and technology articles.
-            </p>
-        </div>
+                <div class="project">
+                    <h3>🔎 SEO Learning Practice</h3>
+                    <p>
+                        Practicing keyword research, search intent
+                        and basic SEO concepts as part of my learning journey.
+                    </p>
+                </div>
 
-    </div>
+                <div class="project">
+                    <h3>✍️ Technology Content Practice</h3>
+                    <p>
+                        Practicing how to research, organize and write
+                        useful computer and technology articles.
+                    </p>
+                </div>
 
-</section>
-    </div>
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
         <p>© 2026 Computer Tips BD. All Rights Reserved.</p>
         <p>Computer Tips • Windows • Internet • Software</p>
     </footer>
- 
+
 </body>
 </html>
